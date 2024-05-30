@@ -21,7 +21,6 @@ const getNewRound = (players, roundId) => players.map(() => ({
 function App() {
 	const [ls, setLs] = useLocalStorage('scrabble-calculator');
 	const [players, setPlayers] = useState(ls && ls.version === LS_VERSION ? ls.players : ['Player 1', 'Player 2']);
-	// const [languageIdx, setLanguageIdx] = useState(ls && ls.version === LS_VERSION ? ls.languageIdx : 0);
 	const language = useLanguage(ls && ls.version === LS_VERSION ? ls.languageIdx : 0);
 	const [getId, setId] = useIdGenerator(ls && ls.version === LS_VERSION ? ls.rounds[ls.rounds.length - 1][0].id + 1 : 0);
 	const [rounds, setRounds] = useState(ls && ls.version === LS_VERSION ? ls.rounds : [getNewRound(players, getId())]);
@@ -68,7 +67,6 @@ function App() {
 	}
 
 	const handleRoundsChange = nextRounds => {
-		console.log(nextRounds);
 		setRounds(nextRounds);
 		setLs({
 			version: LS_VERSION,
