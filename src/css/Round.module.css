@@ -1,0 +1,142 @@
+.turnWrapper {
+	padding: 5px;
+}
+
+.turnGrid {
+	display: grid;
+	grid-template-columns: 1fr 45px;
+	gap: 5px;
+}
+
+.inputWrapper {
+	display: flex;
+	gap: 5px;
+}
+
+.playerName {
+	font-size: 20px;
+	font-stretch: condensed;
+	white-space: nowrap;
+}
+
+.wordInput {
+	width: 100%;
+}
+
+.turnGrandTotal {
+	align-items: center;
+	border-left: var(--turn-border);
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	padding-left: 5px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.entryWrapper:not(:last-child) {
+	border-bottom: var(--turn-border);
+}
+
+.tilesWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 7px 2px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.entryWrapper:last-child .tilesWrapper {
+	padding-bottom: 5px;
+}
+
+.wordScoreWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	border-left: var(--turn-border);
+	box-sizing: border-box;
+	padding-left: 5px;
+	padding-top: 5px;
+	width: 45px;
+}
+
+.wordScore {
+	font-size: 14px;
+}
+
+.tile {
+	align-items: center;
+	background-color: var(--tile);
+	border-radius: 10%;
+	box-shadow: var(--tile-box-shadow) var(--tile-shadow);
+	color: #000;
+	cursor: pointer;
+	display: flex;
+	height: 35px;
+	justify-content: center;
+	position: relative;
+	width: 35px;
+	user-select: none;
+}
+
+.tile.doubleWord {
+	background-color: var(--double-word);
+	box-shadow: var(--tile-box-shadow) var(--double-word-shadow);
+}
+
+.tile.tripleWord {
+	background-color: var(--triple-word);
+	box-shadow: var(--tile-box-shadow) var(--triple-word-shadow);
+}
+
+.tile.doubleLetter {
+	background-color: var(--double-letter);
+	box-shadow: var(--tile-box-shadow) var(--double-letter-shadow);
+}
+
+.tile.tripleLetter {
+	background-color: var(--triple-letter);
+	box-shadow: var(--tile-box-shadow) var(--triple-letter-shadow);
+}
+
+.tileBonus {
+	display: flex;
+	left: 2px;
+	position: absolute;
+	top: 0;
+	font-size: 9px;
+	font-stretch: condensed;
+}
+
+.tileLetter {
+	font-size: 24px;
+}
+
+.tileValue {
+	bottom: 0;
+	font-size: 10px;
+	position: absolute;
+	right: 1px;
+}
+
+.turnScoreWrapper {
+	align-items: center;
+	border-left: 1px dashed var(--bg);
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	padding-left: 5px;
+	width: 45px;
+}
+
+.turnScoreWrapper h4 {
+	font-size: 22px;
+	text-align: center;
+}
+
+.turnScoreWrapper p {
+	font-size: 14px;
+	padding-top: 5px;
+}

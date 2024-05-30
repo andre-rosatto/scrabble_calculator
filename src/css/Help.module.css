@@ -1,0 +1,120 @@
+.backdrop {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	-webkit-backdrop-filter: blur(var(--modal-blur));
+	backdrop-filter: blur(var(--modal-blur));
+	background-color: var(--modal);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.window {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	margin: 5px 0;
+	max-height: 98%;
+	max-width: 400px;
+	width: 95%;
+}
+
+.titleBar {
+	display: flex;
+	align-items: center;
+	background-color: var(--header);
+	box-sizing: border-box;
+	justify-content: space-between;
+	padding: 7px 5px;
+}
+
+.title {
+	text-align: center;
+	width: 100%;
+}
+
+.tabsWrapper {
+	display: flex;
+}
+
+.tab {
+	align-items: center;
+	background-color: var(--header);
+	cursor: pointer;
+	display: flex;
+	font-size: 16px;
+	justify-content: center;
+	width: 100%;
+	padding: 7px 0;
+}
+
+.tab.active {
+	background-color: var(--status-bar);
+	font-size: 18px;
+	font-weight: 700;
+	pointer-events: none;
+}
+
+.contentWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--status-bar);
+	overflow-y: overlay;
+	padding: 10px;
+}
+
+.contentWrapper p {
+	font-size: 14px;
+	margin: 0 0 10px;
+	width: 100%;
+}
+
+.contentWrapper img {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	max-width: 330px;
+	width: 100%;
+}
+
+.contentWrapper span {
+	background-color: var(--control);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: 10px;
+	border-radius: 10%;
+	display: inline-block;
+	height: 15px;
+	margin: 0 5px;
+	transform: translateY(3px);
+	width: 15px;
+}
+
+.buttonOk {
+	background-image: url('../assets/ok_icon.svg');
+}
+
+.buttonAdd {
+	background-image: url('../assets/add_icon.svg');
+}
+
+.buttonDelete {
+	background-image: url('../assets/delete_icon.svg');
+}
+
+.buttonBonus {
+	background-image: url('../assets/bonus_icon.svg');
+}
+
+.buttonSubtract {
+	background-image: url('../assets/subtract_icon.svg');
+}
+
+.buttonLarge {
+	width: 28px !important;
+}

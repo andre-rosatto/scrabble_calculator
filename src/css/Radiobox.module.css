@@ -1,0 +1,32 @@
+.Radiobox {
+	display: flex;
+	align-items: center;
+}
+
+.Radiobox input {
+	display: none;
+}
+
+.box {
+	align-items: center;
+	background-color: #fff4e6;
+	background-color: var(--control);
+	border-radius: 10%;
+	display: flex;
+	height: 20px;
+	justify-content: center;
+	margin-right: 5px;
+	width: 20px;
+}
+
+.mark {
+	background-color: var(--checkmark);
+	border-radius: 10%;
+	height: 12px;
+	visibility: hidden;
+	width: 12px;
+}
+
+.Radiobox.checked .mark {
+	visibility: visible;
+}

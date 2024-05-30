@@ -1,0 +1,51 @@
+.Navbar {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.header {
+	background-color: var(--header);
+	display: flex;
+	justify-content: stretch;
+	align-items: center;
+}
+
+.header h1 {
+	margin: 0;
+	flex: 1;
+	text-align: center;
+	font-size: 22px;
+	font-weight: normal;
+}
+
+.header button {
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-left: 1px solid var(--bg);
+	background-image: url('../assets/menu_icon.svg');
+	background-size: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.header button:hover {
+	background-color: rgba(255, 255, 255, .1);
+}
+
+.header button:active {
+	background-color: rgba(0, 0, 0, .25);
+	background-size: 18px;
+}
+
+.statusBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--status-bar);
+	padding: 5px;
+	border-bottom: 1px solid var(--bg);
+}

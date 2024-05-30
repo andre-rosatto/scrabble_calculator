@@ -1,0 +1,118 @@
+:root {
+	--text: #fff4e6;
+	--bg: #fff4e6;
+	--menu-disabled: #666;
+
+	--header: #4b3832;
+	--status-bar: #3c2f2f;
+
+	--control: #fff4e6;
+	--control-shadow: #a0835f;
+	--control-down: #b3eca2;
+	--checkmark: #4b3832;
+
+	--row-title-bar-light: #6b5047;
+	--row-title-bar-dark: #3c2f2f;
+	--row1: #4b3832;
+	--row2: #854442;
+	--row3: #4f2323;
+	--row4: #a16241;
+
+	--tile: #fff;
+	--tile-shadow: grey;
+	--tile-box-shadow: 0 4px 0;
+	--double-word: #e2a6ae;
+	--double-word-shadow: #cf6d7A;
+	--triple-word: #c93833;
+	--triple-word-shadow: #8a2723;
+	--double-letter: #a9d7e7;
+	--double-letter-shadow: #6bbad6;
+	--triple-letter: #35a0c1;
+	--triple-letter-shadow: #246d84;
+
+	--turn-border: 1px solid rgba(255, 255, 255, .15);
+
+	--modal-blur: 3px;
+	--modal: rgba(0, 0, 0, .5);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.App {
+	width: 100%;
+	max-width: 450px;
+	color: var(--text);
+	font-family: Arial, Helvetica, sans-serif;
+	margin: auto;
+}
+
+.App input[type='text'] {
+	border: none;
+	border-radius: 4px;
+	box-sizing: border-box;
+	height: 20px;
+	outline: none;
+	padding: 4px;
+}
+
+.App .button {
+	background-color: var(--control);
+	box-shadow: 0 3px 0 var(--control-shadow);
+	border: none;
+	cursor: pointer;
+	width: 20px;
+	min-width: 20px;
+	height: 20px;
+	margin-bottom: 3px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 10%;
+}
+
+.App .button.large {
+	width: 100%;
+}
+
+.App .button:active,
+.App .button.down {
+	box-shadow: none;
+	transform: translateY(3px);
+}
+
+.App .button.cancel {
+	background-image: url('../assets/cancel_icon.svg');
+	background-size: 9px;
+}
+
+.App .button.ok {
+	background-image: url('../assets/ok_icon.svg');
+	background-size: 13px;
+}
+
+.App .button.add {
+	background-image: url('../assets/add_icon.svg');
+	background-size: 12px;
+}
+
+.App .button.delete {
+	background-image: url('../assets/delete_icon.svg');
+	background-size: 12px;
+}
+
+.App .button.bonus {
+	background-image: url('../assets/bonus_icon.svg');
+	background-size: 15px;
+}
+
+.App .button.subtract {
+	background-image: url('../assets/subtract_icon.svg');
+	background-size: 12px;
+}
+
+.App .button.down {
+	background-color: var(--control-down);
+}

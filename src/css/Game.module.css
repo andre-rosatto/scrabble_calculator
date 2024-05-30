@@ -1,0 +1,14 @@
+.statusBarScores {
+	display: flex;
+	flex-direction: row;
+	font-size: 14px;
+	font-stretch: condensed;
+	justify-content: space-between;
+	width: 100%;
+	list-style: none;
+}
+
+.roundsWrapper {
+	display: flex;
+	flex-direction: column-reverse;
+}

@@ -1,0 +1,26 @@
+.statusBarTitle {
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.li {
+	padding: 5px;
+}
+
+.nameInput {
+	max-width: 200px;
+	border: none;
+}
+
+.nameInput:not(:focus) {
+	font-size: 20px;
+	background-color: transparent;
+	font-weight: bold;
+	color: white;
+}
+
+.charset {
+	font-size: 14px;
+	margin: 5px 0 0 26px;
+}
