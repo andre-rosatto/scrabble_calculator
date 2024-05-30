@@ -15,6 +15,7 @@ const Round = ({ round, roundIdx, isTopmost, players, language, onAddRound, onDe
 	}
 
 	const handleAddClick = (turnIdx) => {
+		if (newWords[turnIdx].length === 0) return;
 		const nextRound = [...round];
 		const word = newWords[turnIdx];
 		nextRound[turnIdx].words.push(word);
@@ -112,7 +113,7 @@ const Round = ({ round, roundIdx, isTopmost, players, language, onAddRound, onDe
 			>
 				{round.map((turn, turnIdx) => (
 					<li key={turnIdx} className={styles.turnWrapper}>
-						{/* inputbat */}
+						{/* inputbar */}
 						<div className={styles.turnGrid}>
 							<div className={styles.inputWrapper}>
 								<h4 className={styles.playerName}>{players[turnIdx]}</h4>
