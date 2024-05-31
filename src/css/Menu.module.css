@@ -1,6 +1,6 @@
 .backdrop {
-	-webkit-backdrop-filter: var(--modal-blur);
-	backdrop-filter: var(--modal-blur);
+	-webkit-backdrop-filter: blur(var(--modal-blur));
+	backdrop-filter: blur(var(--modal-blur));
 	background-color: var(--modal);
 	display: flex;
 	height: 100%;

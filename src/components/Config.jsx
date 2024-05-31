@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import Row from "./Row";
 import Radiobox from './Radiobox';
 
-const MAX_PLAYER_NAME_SIZE = 7;
+const MAX_PLAYER_NAME_SIZE = 12;
 
 const Config = ({ players, language, onMenu, onCancel, onConfirm }) => {
 	const [tempPlayers, setTempPlayer] = useState(() => {

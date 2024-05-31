@@ -1,11 +1,13 @@
 .statusBarScores {
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	font-size: 14px;
-	font-stretch: condensed;
-	justify-content: space-between;
 	width: 100%;
 	list-style: none;
+}
+
+.statusBarScores li:nth-child(2n) {
+	text-align: right;
 }
 
 .roundsWrapper {
